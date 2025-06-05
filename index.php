@@ -1,0 +1,92 @@
+<!-- Sets the php to an html file instead -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Marking Period 4 project">
+        <meta name="author" content="Name">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Magic 8 Ball Game</title>
+        <!-- connects to style.css -->
+        <link href="style.css" rel="stylesheet">
+        <!-- Gets fonts from cdn fonts such as Brittany-Signature and Garet -->
+        <link href="https://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
+</head>
+<main>
+<body>
+        <header>
+                <!-- Gos to header.php to get the header (Magic 8 Ball Game)-->
+                <?php include "header.php"; ?> 
+                <!-- Gos to subtitle.php to get the subtitle (Maybe today is your lucky day!) -->
+                <?php include "subtitle.php"; ?>
+        </header>
+        <!-- Form to get the questions -->
+<form name="getQuestion">
+        <!-- input to insert the text for the question -->
+        <input id="question" type="text" placeholder="Insert a question here..."><br>
+        <!-- Message will either be blank, say "A question mark is required at the end", or Answer... -->
+        <p id="answer-message"><p>
+        <!-- Container for items in the middle of the page -->
+        <div class="container">
+                <!-- Affirmative Answers menu with all possible affirmative answers -->
+                <div class="affrimativeAnswers">
+                        <!-- List of them -->
+                        <p>Affrimative Answers Include:</p>        
+                        <ul>
+                                <li>Yes - definitely</li>
+                                <li>It is certain</li>
+                                <li>It is decidedly so </li>
+                                <li>Without a doubt</li>
+                                <li>You may rely on it </li>
+                                <li>As I see it, yes</li>
+                                <li>Most likely</li>
+                                <li>Outlook good</li>
+                                <li>Yes</li>
+                                <li>Signs point to yes</li>
+                                <li>Yes, but not now</li>
+                        </ul>
+                </div>
+                <!-- The container for the ball -->
+                <div class="theBall">
+                        <!-- image of the ball -->
+                        <img id="ball" src="MP4ProjectCards/Base_Card_for_MP4_Project.png" alt="Base Card">
+                </div>
+                <!-- Negative Answers and Non Committal Answers menu -->
+                <div class="negativeAnswersandnonCommitalAnswers">
+                        <!-- List of them -->
+                        <p>Negative Answers Include:</p>        
+                        <ul>
+                                <li>My sources say no</li>
+                                <li>Outlook not so good </li>
+                                <li>Without a doubt</li>
+                                <li>No</li>
+                                <li>Don't count on it</li>
+                        </ul>
+                        <p>Non-committal Answers Include:</p>
+                        <ul>
+                                <li>Reply hazy, try again</li>
+                                <li>Ask again later</li>
+                                <li>Better not tell you now</li>
+                                <li>Concentrate and ask again</li>
+                                <li>Cannot predict now</li>
+                        </ul>
+                </div>
+        </div>
+        <!-- Directions -->
+        <p>Press Enter or Submit to get answer</p><br>
+        <!-- Submit button -->
+        <button type="button" onclick="magic8Ball()">Submit Question!</button><br>
+</form>
+</main>
+<!-- Contacts in the footer -->
+<footer>
+        <p>Michael Slaughter</p>     
+        <p>To contact me, email: </p> 
+        <p>37216@ocvts.org</p> 
+        <p>slaughtermike87@gmail.com</p>    
+</footer>
+<!-- Links to javascript -->
+<script src="script.js"></script>
+</body>
+</html>

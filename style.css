@@ -1,0 +1,247 @@
+/* Gives the background a blue and pink gradient background that covers the whole screen and prevents white spots.  */
+body {
+    background-image: linear-gradient(to right, #5170ff , #ff66c4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    background-attachment: fixed;
+}
+
+/* Centers the h1 (Magic 8 Ball game) and sets its font to 'Brittany Signature', sans-serif (cdnfonts) with an 80px font-size.*/
+h1 {
+    font-family: 'Brittany Signature', sans-serif;            
+    text-align: center;
+    font-size: 80px;                             
+}
+
+/* Sets paragraphs such as "Maybe today is your lucky day" and answer to 'Garet', sans-serif (cdnfonts) with centered text and a font-size of 25px. */
+p {
+    font-family: 'Garet', sans-serif;
+    text-align: center;
+    font-size: 25px;                                           
+}
+
+/* Centers the question form */
+form {
+    text-align: center;
+}
+
+/* Gives input curved corners (border-radius: 20px) with a width of 400px, a height of 40px, black dashed border, 20px font size and centered text.  */
+input {
+    border-radius: 20px;
+    height: 40px;
+    width: 400px;
+    border: 1px dashed black;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Makes the Submit Button pink, 300px wide, 40px long, curved corners (border-radius 20px), and a font-size of 20px */
+button {
+    background-color: #e568cd;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* Sets a flex container for both answer menus and the ball */
+.container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Makes the affirmative answers side pink with blue text. It will have a slight border radius of 7px. Its font size will be 20px and its size will be 350px by 450px. It will be self aligned to the center. Other than the colors, it will be the same as the negative answers and non committal answers menu. */
+.affrimativeAnswers{
+    margin: 100px;
+    border-radius: 7px;
+    background-color: #e568cd;
+    color: #004aad;
+    font-size: 20px;
+    width: 350px;
+    height: 450px;
+    align-self: center;
+}
+
+/* Sets the header text in the affirmative answers section to 20px */
+.affrimativeAnswers p, .negativeAnswersandnonCommitalAnswers p {
+    font-size: 20px;
+}    
+
+/* Sets a container for the ball. It has a width of 800px, is 600px long, displays as block and is self-aligns to the center. The ball will have a min size of 200px wide by 150px long*/
+.theBall {
+    width: 800px;
+    height: 600px;
+    min-width: 200px;
+    min-height: 150px;
+    display: block;
+    align-self: center;
+}
+
+/* The image is the ball. This is the only image on the page */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* the negative answers and non committal answers menu has a margin right of 100px to create some spce. The background color and font color will be inversed. Other than that, the negative answers menu is the same. */
+.negativeAnswersandnonCommitalAnswers{
+    margin-right: 100px;
+    border-radius: 7px;
+    background-color: #004aad;
+    color: #e568cd;
+    font-size: 20px;
+    width: 350px;
+    height: 450px;
+    align-self: center;
+}
+
+/* Sets the footer to have a purple background, white text, a sans-serif font, a min height of 100px, a min width of 100%, overflow-x of hidden, auto for margin top, and bottom: 0 to keep the footer toward the bottom. It also has a position of relative.*/
+footer {
+    background-color: #5e17eb;
+    color: white;
+    font-family: sans-serif;
+    min-height: 100px;
+    min-width: 100%;
+    overflow-x: hidden;
+    margin-top: auto;
+    bottom: 0;
+    position: relative;
+}
+
+/* Sets font for text in the footer to 20px */
+footer p{
+    font-size: 20px;
+}
+
+/* When the screen shrinks to 1500px or under, the following happens */
+@media only screen and (max-width: 1500px) {
+    /* The h1 (Magic 8 Ball Game) shrinks to 70px for the font-size from 80px */
+    h1 {
+        font-size: 70px;                             
+    }
+    /* The paragraphs shrink to 20px */
+    p {
+        font-size: 20px;                                           
+    }
+
+    /* The input (Insert a question here) shrinks to a height of 35px and a width of 340 px */
+    input {
+        height: 35px;
+        width: 340px;
+    }
+
+    /* Shrinks the Affirmative Answers and Negative Answers and Non Committal Answers menus to 250px wide by 400px long. It also shrinks the font to 15px*/
+    .affrimativeAnswers, .negativeAnswersandnonCommitalAnswers{
+        font-size: 15px;
+        width: 250px;
+        height: 400px;
+    }
+
+    /* Shrinks the width of the ball to 600px by 425px */
+    .theBall {
+        width: 600px;
+        height: 425px;
+    }
+
+    /* Shrinks the font size of the menu's headers to 15px */
+    .affrimativeAnswers p, .negativeAnswersandnonCommitalAnswers p{
+        font-size: 15px;
+    }    
+
+    /* Shrinks the footers text font size of 12.5px */
+    footer p {
+        font-size: 12.5px;
+    }
+}
+
+/* Media quiery for when the screen is 1200px or less */
+@media only screen and (max-width: 1200px) {
+    /* Shrinks the h1 from 70px to 60px */
+    h1 {
+        font-size: 60px;                             
+    }
+    /* Shrinks paragrpahs from 20px px to 17.5 */
+    p {
+        font-size: 17.5px;                                           
+    }
+    /* height shrinked from 35 to 30px and the width was shrinked from 340px to 300px */
+    input {
+        height: 30px;
+        width: 300px;
+    }
+
+    /* Shrinks font-size from 15px to 12.5px. It also increases the width of 250px to 300px and the height from 400px to 500px;*/
+    .affrimativeAnswers, .negativeAnswersandnonCommitalAnswers{
+        font-size: 12.5px;
+        width: 300px;
+        height: 500px;
+        margin: 100px;
+    }
+}
+
+/* shrinks the height to 300px and create a 10px auto margin. It also shrinks the font size to 10px */
+@media only screen and (max-width: 1075px) {
+    .affrimativeAnswers, .negativeAnswersandnonCommitalAnswers {
+        margin: 10px auto;
+        height: 300px;
+        font-size: 10px;
+    }
+
+    /* shrinks titles to 12px font size */
+    .affrimativeAnswers p, .negativeAnswersandnonCommitalAnswers p{
+        font-size: 12px;
+    }
+
+    /* shirnks the balls width and height. It keeps the display block and turns overflow to visible */
+    .theBall {
+        width: 400px;
+        height: 300px;
+        display: block;
+        overflow: visible;
+    }
+
+    /* shrinks the width of the button from 300px to 200px and the height from 40px to 27.5px */
+    button {
+        width: 200px;
+        height: 27.5px;
+        font-size: 15px;
+    }
+
+    /* keeps footers position to relative and keeps the bottom: 0 */
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    
+    /* When the height of the screen shrinks to 825px or under, the footer disappears */
+    @media only screen and (max-height: 825px) {
+        footer {
+            display: none;
+        }
+    }
+}
+
+/* Media quiery for screens with a width of 650px or under */
+@media only screen and (max-width: 650px) {
+    /* keeps the margin 10px auto and shrinks the height to 250px */
+    .affrimativeAnswers, .negativeAnswersandnonCommitalAnswers {
+        margin: 10px auto;
+        height: 250px;
+    }
+
+    /* shrinks ball to minimum size */
+    .theBall {
+        width: 200px;
+        height: 150px;
+    }
+
+    /* makes footer have a 100% width */
+    footer {
+        width: 100%;
+    }
+}
+
