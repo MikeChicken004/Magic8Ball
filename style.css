@@ -227,18 +227,18 @@ footer p{
 
 /* Media quiery for screens with a width of 650px or under */
 @media only screen and (max-width: 650px) {
-    /* keeps the margin 10px auto and shrinks the height to 250px */
+    /* Removes menus when screen is 650 px wide or less */
     .affrimativeAnswers, .negativeAnswersandnonCommitalAnswers {
         display: none;
     }
 
-    /* shrinks ball to minimum size */
+    /* makes the ball fill the screen once the menus are removed*/
     .theBall {
         width: 700px;
         height: 525px;
     }
 
-    /* makes footer have a 100% width */
+    /* position set to relative */
     footer {
         position: relative;
     }
