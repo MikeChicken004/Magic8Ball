@@ -218,7 +218,7 @@ footer p{
     }
     
     /* When the height of the screen shrinks to 825px or under, the footer disappears */
-    @media only screen and (max-height: 825px) {
+    @media only screen and (max-height: 850px) {
         footer {
             display: none;
         }
